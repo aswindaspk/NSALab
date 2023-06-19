@@ -1,3 +1,5 @@
+# 3.Shell script using command line to print the prime number between two numbers.
+
 if [ $# -gt 2 -o $# -lt 2 -a $# -gt 0 ]
 then
 echo "Syntax Error \nSyntax --> $0 [starting limit] [ending limit]"
