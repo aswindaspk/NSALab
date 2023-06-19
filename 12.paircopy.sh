@@ -1,3 +1,5 @@
+#shell script to copy a set of files given as pairs at command prompt
+
 r=`expr $# % 2`
 if [ $r -ne 0 ]
 then
