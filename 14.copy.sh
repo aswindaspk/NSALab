@@ -2,7 +2,7 @@
  
 if [ $# -ne 2 ]
 then
-echo "\n Syntax is <$0><src file name><tgt file name>"
+echo "\n Syntax is <$0><source file name><target file name>"
 exit 1
 fi
 if [ ! -f $1 ]
@@ -12,12 +12,14 @@ exit 2
 fi
 if [ -f $2 ]
 then
-echo "target file exists,over write(y/n) :"
+echo "Target file exists, Over-write(y/n) ::"
 read ans
-if [ $ans="n" ]
+if [ $ans="y" ]
 then
+true  #equivalent to pass in python or can use ':'
+else
 exit 3
 fi
 fi
 cp $1 $2
-echo "file copied"
+echo "File copied"
