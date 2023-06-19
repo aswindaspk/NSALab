@@ -1,3 +1,5 @@
+# 1.Shell script to test whether the given year is a leap year or not.
+
 if [ $# -gt 1 ]
 then
 echo "Syntax Error \nSyntax --> $0 [year]"
