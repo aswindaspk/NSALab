@@ -1,3 +1,6 @@
+#7.shell script to display message "Good Morning,Good Afternoon,Good evening and Good Night" according to system time
+
+
 if  [ $# -gt 0 ]
 then
 echo "Syntax error. Code will check the system Time.\nSyntax --> $0"
