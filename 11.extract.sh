@@ -2,7 +2,7 @@
 
 if [ $# -le 2 ]
 then
-echo "Syntax Error.\nSyntax -->  $0 [range] [range] [files]"
+echo "Syntax Error.\nSyntax -->  $0 [range] [range] [files...]"
 fi
 n1=$1
 n2=$2
@@ -11,7 +11,7 @@ shift
 n3=`expr $n2 - $n1 + 1`
 while [ $# -ne 0 ]
 do
-echo "\n\nContents of $1 :\n"
+echo "\n\nContents of $1from line $n1-$n2 :\n"
 head -$n2 $1 | tail -$n3
 shift
 done
