@@ -13,11 +13,11 @@ else
 a=$1
 b=$2
 fi
-cmp $a $b
+cmp $a $b > /dev/null
 if [ $? -eq 0 ]
 then
 rm $b
 echo "Removed duplicate file"
 else
-echo "No duplicate file exists"
+echo "Not a duplicate file"
 fi
