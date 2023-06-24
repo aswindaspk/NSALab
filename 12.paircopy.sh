@@ -1,5 +1,8 @@
-#shell script to copy a set of files given as pairs at command prompt
 
+if [ $# -lt 2 ]
+then
+echo "Syntax Error.\nSyntax --> $0 [filename] [filename] ......"
+fi
 r=`expr $# % 2`
 if [ $r -ne 0 ]
 then
