@@ -2,6 +2,7 @@
 if [ $# -lt 2 ]
 then
 echo "Syntax Error.\nSyntax --> $0 [filename] [filename] ......"
+exit
 fi
 r=`expr $# % 2`
 if [ $r -ne 0 ]
