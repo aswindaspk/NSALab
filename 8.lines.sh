@@ -8,7 +8,7 @@ fi
 cp $1 file
 l=`cat file | wc -l`
 rm reverse
-while [ $l -gt 1 ]
+while [ $l -gt 0 ]
 do
 tail -n 1 file >> reverse
 l=`expr $l - 1`
