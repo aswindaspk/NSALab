@@ -12,8 +12,16 @@ exit 1
 fi
 while [ $# -ne 0 ]
 do
+if [ -f $1 -a -f $2 ]
+then
 cp $1 $2
+echo "$1 and $2 copied."
 shift
 shift
+else
+echo "$1 and $2 copying failed(File(s) do not exist)"
+exit 1
+fi
 done
+echo "Files Copied."
 exit 0
