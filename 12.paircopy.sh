@@ -23,5 +23,5 @@ echo "$1 and $2 copying failed(File(s) do not exist)"
 exit 1
 fi
 done
-echo "Files Copied."
+echo "Copying Completed"
 exit 0
